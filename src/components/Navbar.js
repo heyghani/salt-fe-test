@@ -4,7 +4,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav className="w-full flex py-6 justify-between items-center">
-      <p className="font-bold text-blue-600 text-[24px]">COMPANY</p>
+      <p className="font-bold text-[#39A7FF] text-[24px]">COMPANY</p>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         <li className="font-normal cursor-pointer text-[16px] text-black mr-10">
           <a>Who We Are</a>
@@ -25,16 +25,16 @@ const Navbar = () => {
         <div
           className={`${
             toggle ? "flex" : "hidden"
-          } p-6 bg-black absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+          } p-6 bg-white absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar z-10 shadow-md`}
         >
           <ul className="list-none flex flex-col justify-end items-center flex-1">
-            <li className="font-normal cursor-pointer text-[16px] text-white mb-4">
+            <li className="font-normal cursor-pointer text-[16px] text-[#39A7FF] mb-4">
               <a>Who We Are</a>
             </li>
-            <li className="font-normal cursor-pointer text-[16px] text-white mb-4">
+            <li className="font-normal cursor-pointer text-[16px] text-[#39A7FF] mb-4">
               <a>Our Value</a>
             </li>
-            <li className="font-normal cursor-pointer text-[16px] text-white ">
+            <li className="font-normal cursor-pointer text-[16px] text-[#39A7FF] ">
               <a>The Perks</a>
             </li>
           </ul>
